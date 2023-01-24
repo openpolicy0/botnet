@@ -1,0 +1,4 @@
+termcolor
+datetime
+requests
+colorama
