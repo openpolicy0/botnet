@@ -1,4 +1,4 @@
-# BOTnet-Ddos
+# botnet
 A python script that will possibly take down a website or home connection. Im not responsible for how you use this tool. (DO NOT USE IT FOR BAD)
 
 
