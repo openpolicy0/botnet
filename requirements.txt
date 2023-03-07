@@ -2,3 +2,4 @@ termcolor
 datetime
 requests
 colorama
+rich
