@@ -4,7 +4,7 @@ A python script that will possibly take down a website or home connection. Im no
 
 git clone https://github.com/Oprahouse9/botnet.git
 
-cd BOTnet-Ddos 
+cd botnet 
 
 pip install -r requirements.txt 
 
