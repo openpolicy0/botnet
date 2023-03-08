@@ -47,6 +47,10 @@ acceptall=["Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=
 "Accept-Language: en-US,en;q=0.5\r\n"]
 
 time.sleep(2)
+f = open("ddosed_ips.txt", "r")
+print("[bold yellow][+][/bold yellow][bold red] recent ddosed ip addresses[/bold red]")
+print(f.read())
+print("[blue]----------------------------------------------------------[/blue]")
 ip = str(input(Fore.RED + '[+] IP: '))
 port = int(input(Fore.RED + '[+] PORT: '))
 print("[bold red][*] SLOW-2 0.4 | SLOW-1 0.3 | MEDIUM 0.2 | FAST-2 0.1 | FAST-1 0.0[/bold red]")
