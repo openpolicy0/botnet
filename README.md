@@ -1,4 +1,4 @@
-![Screenshot_20230307_193207_Termux](https://user-images.githubusercontent.com/116130475/223610339-99cc0e7f-47fe-4f08-b3a8-cc7712874eef.jpg)
+![Screenshot_20230307_193207_Termux](https://user-images.githubusercontent.com/116130475/223610890-aff7b4af-e95e-497e-841c-38780c24f3d3.jpg)
 # botnet
 A python script that will possibly take down a website or home connection. Im not responsible for how you use this tool. (DO NOT USE IT FOR BAD)
 
