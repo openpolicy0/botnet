@@ -69,7 +69,7 @@ try:
 except FileNotFoundError:
     print("[bold red]File not found making new one[/bold red]")
     nf = open('ddosed_ips.txt', 'w')
-    nf.write('NEW FILE ')
+    nf.write('')
     print("[bold green]file saved at [/bold green][blue]/home/kali/botnet/ddosed_ips.txt[/blue]")
 
 print("[bold red]TCP-STRESSER | HTTP-STRESSER[/bold red]")
